@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    background-color: var(--very-light-gray);
+    font-family: Poppins, Courier, monospace;
+    color: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+}
+
+/* header styling */
+header {
+    margin: 3.5rem 0 5rem;
+    text-align: center;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--very-dark-blue);
+    margin: 0;
+}
+
+header p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+}
+
+/* main styling */
+main {
+    margin-bottom: 3rem;
+}
+
+.card {
+    padding: 0 1.8rem 2rem;
+    border-radius: .4rem;
+    box-shadow: 0px 5px 5px var(--grayish-blue);
+    margin-bottom: 1.6rem;
+    height: 12rem;
+    position: relative;
+}
+
+h2 {
+    font-weight: 600;
+    margin: 1.5rem 0 .5rem;
+    font-size: 1.4rem;
+}
+
+p {
+    color: var(--grayish-blue);
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.76rem;
+}
+
+img {
+    position: absolute;
+    right: 1.8rem;
+    bottom: 1.8rem;
+}
+
+/* card colors */
+.card:nth-child(1) {
+    border-top: .3rem solid var(--cyan);
+}
+
+.card:nth-child(2) {
+    border-top: .3rem solid var(--red);
+}
+
+.card:nth-child(3) {
+    border-top: .3rem solid var(--orange);
+}
+
+.card:nth-child(4) {
+    border-top: .3rem solid var(--blue);
+}
