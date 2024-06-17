@@ -17,7 +17,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem;
+    align-items: center;
+    margin: 2.5rem;
 }
 
 /* header styling */
@@ -26,21 +27,23 @@ header {
     text-align: center;
 }
 
+h1 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin: .5rem 0 1rem;
+}
+
 .tagline {
-    font-size: 1.5rem;
-    font-weight: 200;
+    font-size: 1.9rem;
+    font-weight: 100;
     color: var(--very-dark-blue);
     margin: 0;
 }
 
-header p {
+.description {
     text-align: center;
-}
-
-h1 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin: 0 0 1rem;
+    width: 23rem;
+    font-size: 1rem;
 }
 
 /* main styling */
@@ -77,18 +80,56 @@ img {
 }
 
 /* card colors */
-.card:nth-child(1) {
+.supervisor {
     border-top: .3rem solid var(--cyan);
 }
 
-.card:nth-child(2) {
+.team {
     border-top: .3rem solid var(--red);
 }
 
-.card:nth-child(3) {
+.karma {
     border-top: .3rem solid var(--orange);
 }
 
-.card:nth-child(4) {
+.calc {
     border-top: .3rem solid var(--blue);
+}
+
+@media all and (min-width: 50rem) {
+    header {
+        max-width: 32rem;
+        margin: 3.5rem 0 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-top: .5rem;
+    }
+
+    .tagline {
+        font-size: 2.2rem;
+        font-weight: 100;
+    }
+
+    .description {
+        width: auto;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        min-width: calc(100%-2rem);
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        max-width: 20rem;
+        height: 15rem;
+        margin: 2rem .8rem;
+    }
 }
